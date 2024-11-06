@@ -89,7 +89,7 @@ export default ({ mode }) =>
           ],
         },
       }),
-      // viteCompression(),
+      viteCompression(),
     ],
     server: {
       port: "3000",
