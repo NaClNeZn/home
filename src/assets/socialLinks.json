@@ -3,36 +3,42 @@
     "name": "Github",
     "icon": "/images/icon/github.png",
     "tip": "去 Github 看看",
-    "url": "https://github.com/imsyy"
+    "url": "https://github.com/NaClNeZn"
+  },
+  {
+    "name": "Gitee",
+    "icon": "/images/icon/gitee.png",
+    "tip": "去 Gitee 看看",
+    "url": "https://gitee.com/naclnezn/guide"
   },
   {
     "name": "BiliBili",
     "icon": "/images/icon/bilibili.png",
     "tip": "(゜-゜)つロ 干杯 ~",
-    "url": "https://space.bilibili.com/98544142"
-  },
-  {
-    "name": "QQ",
-    "icon": "/images/icon/qq.png",
-    "tip": "有什么事吗",
-    "url": "https://res.abeim.cn/api/qq/?qq=1539250352"
+    "url": "https://space.bilibili.com/8748305"
   },
   {
     "name": "Email",
     "icon": "/images/icon/email.png",
-    "tip": "来封 Email ~",
-    "url": "mailto:one@imsyy.top"
+    "tip": "来封 Email",
+    "url": "1375186232@qq.com"
   },
   {
-    "name": "Twitter",
-    "icon": "/images/icon/twitter.png",
-    "tip": "你懂的 ~",
-    "url": "https://twitter.com/iimmsyy"
+    "name": "Live",
+    "icon": "/images/icon/live.png",
+    "tip": "来看直播",
+    "url": "https://live.bilibili.com/4279968"
   },
   {
-    "name": "Telegram",
-    "icon": "/images/icon/telegram.png",
-    "tip": "你懂的 ~",
-    "url": "https://t.me/bottom_user"
+    "name": "juejin",
+    "icon": "/images/icon/juejin.png",
+    "tip": "掘金~",
+    "url": "https://juejin.cn/user/2192886264769179"
+  },
+  {
+    "name": "微博",
+    "icon": "/images/icon/weibo.png",
+    "tip": "关心时事~",
+    "url": "https://weibo.com/u/5172328022"
   }
 ]
