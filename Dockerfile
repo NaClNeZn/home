@@ -1,17 +1,11 @@
-# 构建应用
-FROM node:18 AS builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-RUN [ ! -e ".env" ] && cp .env.example .env || true
-RUN npm run build
+FROM registry.cn-beijing.aliyuncs.com/drgeek-common/nginx:stable-perl
+ENV server_port ${server_port}
 
-# 最小化镜像
-FROM node:18-alpine
-WORKDIR /app
-COPY --from=builder /app/dist ./dist
-RUN npm install -g http-server
+# 设置时区
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo '$TZ' > /etc/timezone
 
-EXPOSE 12445
-CMD ["http-server", "dist", "-p", "12445"]
+COPY ./dist/ /usr/share/nginx/html
+# COPY --from=builder $PROJECT_DIR/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE ${server_port}
