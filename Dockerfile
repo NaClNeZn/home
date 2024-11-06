@@ -5,7 +5,7 @@ ENV server_port ${server_port}
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo '$TZ' > /etc/timezone
 
-COPY ./dist/ /usr/share/nginx/html
+COPY dist/ /usr/share/nginx/html
 # COPY --from=builder $PROJECT_DIR/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE ${server_port}
